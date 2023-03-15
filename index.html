@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Componentes de Computadora</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+    <link rel="stylesheet" href="funciones.js">
+
+    <style>
+      /* Estilos para pantallas grandes */
+      .recomendaciones {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .recomendaciones img {
+        width: 50px;
+        height: 50px;
+      }
+  
+      /* Estilos para pantallas pequeñas */
+      @media screen and (max-width: 600px) {
+        .recomendaciones {
+          flex-wrap: wrap;
+        }
+        
+        .recomendaciones img {
+          width: 20px;
+          height: 20px;
+          margin-bottom: 10px;
+        }
+      }
+      
+      body {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+  
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+  
+      main {
+        padding: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+  
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <nav>
+      <ul class="align-right">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#procesadores">Procesadores</a></li>
+        <li><a href="#memorias-ram">Memorias RAM</a></li>
+        <li><a href="#tarjetas-madre">Tarjetas Madre</a></li>
+        <li><a href="#gabinetes">Gabinetes</a></li>
+        <li><a href="#tarjetas-de-video">Tarjetas de Video</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        
+      </ul>
+    </nav>
+
+    <header>
+        <h1>Componentes para tu PC</h1>
+        <div id="carrito">
+          <img src="carrito.png" alt="carrito de compras">
+          <ul>
+            <li><a href="#">Ver carrito</a></li>
+            <li><a href="#">Comprar carrito</a></li>
+          </ul>
+        </div>
+    </header>
+
+    <section id="procesadores">
+      <h2>Procesadores</h2>
+      <p>Procesador Intel Core i5-11600K - $320 US</p>
+      <div id="Intel Core i5-11600K">
+        <img src="221.png" alt="Procesador Core i5-11600K">
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Agregar al carrito</span>
+        </button>
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Ver caracteristicas</span>
+          </button>
+        </div>
+      </div>
+
+      <p>Procesador AMD Ryzen 9 5900X - $600 US</p>
+      <div id="AMD Ryzen 9 5900X">
+        <img src="Procesador AMD Ryzen 9 5900X.png" alt="Procesador Ryzen 9">
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Agregar al carrito</span>
+        </button>
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Ver caracteristicas</span>
+          </button>
+        </div>
+      </div>
+
+      <p>Procesador Intel Core i3-12100 (12th Gen) - $170 US</p>
+      <div id="Intel Core i3-12100">
+        <img src="Core i3-12100.png" alt="Procesador Core i3-12100">
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Agregar al carrito</span>
+        </button>
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Ver caracteristicas</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="memorias-ram">
+      <h2>Memorias RAM</h2>
+      <p>Kingston HyperX Fury 16GB (2x8GB) DDR4 3200MHz CL16 - $93 US</p>
+      <div id="HyperX Fury 16GB">
+        <img src="Kingston HyperX Fury 16GB (2x8GB) DDR4 3200MHz CL16.png" alt="HyperX 16GB">
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Agregar al carrito</span>
+        </button>
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Ver caracteristicas</span>
+          </button>
+        </div>
+      </div>
+
+      <p>G.Skill Ripjaws V Series 16GB (2x8GB) DDR4 3600MHz CL16 - $105 US</p>
+      <div id="Ripjaws V Series 16GB">
+        <img src="G.Skill Ripjaws V Series 16GB (2x8GB) DDR4 3600MHz CL16.png" alt="VSERIES 16BB">
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Agregar al carrito</span>
+        </button>
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Ver caracteristicas</span>
+          </button>
+        </div>
+      </div>
+
+      <p>Corsair Vengeance LPX 16GB (2x8GB) DDR4 DRAM 3200MHz C16 - $100</p>
+      <div id="Corsair Vengeance LPX 16GB">
+        <img src="Corsair Vengeance LPX 16GB (2x8GB) DDR4 DRAM 3200MHz C16.png" alt="LPX 16GB">
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Agregar al carrito</span>
+        </button>
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Ver caracteristicas</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="tarjetas-de-video">
+      <h2>Tarjetas de Video</h2>
+      <p>Nvidia GeForce RTX 3090 - $1500 US</p>
+      <div id="GeForce RTX 3090">
+        <img src="GeForce RTX 3090.png" alt="RTX 3090">
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Agregar al carrito</span>
+        </button>
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Ver caracteristicas</span>
+          </button>
+        </div>
+      </div>
+
+      <p>AMD Radeon RX 6900 XT - $1000 US</p>
+      <div id="Radeon RX 6900">
+        <img src="AMD Radeon RX 6900 XT.png" alt="RX 6900 XT">
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Agregar al carrito</span>
+        </button>
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Ver caracteristicas</span>
+          </button>
+        </div>
+      </div>
+
+      <p>Nvidia Titan RTX - $2500 US</p>
+      <div id="Titan RTX">
+        <img src="Nvidia Titan RTX.png" alt="RTX Titan">
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Agregar al carrito</span>
+        </button>
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Ver caracteristicas</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="tarjetas-madre">
+      <h2>Tarjetas Madre</h2>
+      <p>ASRock B450M Pro4 - $80 US</p>
+      <div id="ASRock B450M Pro4">
+        <img src="ASRock B450M Pro4.png" alt="B450M Pro4">
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Agregar al carrito</span>
+        </button>
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Ver caracteristicas</span>
+          </button>
+        </div>
+      </div>
+
+      <p>MSI MPG B550 Gaming Edge WIFI - $190 US</p>
+      <div id="MSI MPG B550 Gaming">
+        <img src="MSI MPG B550 Gaming Edge WIFI.png" alt="MPG B550 Gaming">
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Agregar al carrito</span>
+        </button>
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Ver caracteristicas</span>
+          </button>
+        </div>
+      </div>
+
+      <p>ASUS ROG Maximus XIII Hero - $500 US</p>
+      <div id="ROG Maximus XIII Hero">
+        <img src="ASUS ROG Maximus XIII Hero.png" alt="ROG Maximus XIII">
+      <button class="btn">
+        <div class="btn-fill"></div>
+        <span class="btn-txt">Agregar al carrito</span>
+      </button>
+      <button class="btn">
+        <div class="btn-fill"></div>
+        <span class="btn-txt">Ver caracteristicas</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="gabinetes">
+      <h2>Gabinetes</h2>
+      <p>NZXT H510 Elite - $150 US</p>
+      <div id="NZXT H510 Elite">
+        <img src="NZXT H510 Elite.png" alt="H510 Elite">
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Agregar al carrito</span>
+        </button>
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Ver caracteristicas</span>
+          </button>
+        </div>
+      </div>
+
+      <p>Corsair Obsidian Series 1000D - $500 US</p>
+      <div id="Corsair Obsidian Series 1000D">
+        <img src="Corsair Obsidian Series 1000D.png" alt="Corsair Obsidian">
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Agregar al carrito</span>
+        </button>
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Ver caracteristicas</span>
+          </button>
+        </div>
+      </div>
+
+      <p>Thermaltake Core P90 - $200 US</p>
+      <div id="Thermaltake Core P90">
+        <img src="Thermaltake Core P90.png" alt="Thermaltake P90">
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Agregar al carrito</span>
+        </button>
+        <button class="btn">
+          <div class="btn-fill"></div>
+          <span class="btn-txt">Ver caracteristicas</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  <div class="contenedor">
+    <div class="iconos">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-bookmark"></i>
+    <div class="recomendaciones">
+      <div class="columna">
+        <h2>Elige como pagar</h2>
+        <img src="tarjeta-de-debito.png" alt="icono de pago" />
+        <p>Con nosotros, tú eliges el método de pago, hasta 12 mensualidades sin intereses</p>
+      </div>
+      <div class="columna">
+        <h2>Envios gratis desde $299</h2>
+        <img src="entrega-gratis.png" alt="icono de envío" />
+        <p>En nuestra empresa, a partir de $299 los envíos son gratis <a href="#">(Se aplican restricciones)</a></p>
+      </div>
+      <div class="columna">
+        <h2>Seguridad de la tienda a tu casa</h2>
+        <img src="proteger.png" alt="icono de seguridad" />
+        <p>Si no te gusta el producto o no estás de acuerdo, tu pedido está protegido.</p>
+        <p>¡Devuélvelo cuando gustes!</p>
+    </div>
+      </div>
+    </div>
+  </div>
+    
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Derechos de autor © 2023 BComputerCenter</p>
+      <p>Correo electrónico: BCCcomputerCenter@gmail.com</p>
+    </section>
+
+  </body>
+</html>
